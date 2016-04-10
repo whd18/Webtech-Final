@@ -1,2 +1,2 @@
 # Webtech-Final
-Our Web Technologies Final Project and the Dead Line is 2nd May 2016
+Web Technologies Final Group Project and the Deadline is 2nd May 2016.
