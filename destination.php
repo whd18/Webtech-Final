@@ -10,7 +10,7 @@
 			    width: 50%;
 			    float: left;
 			    color:#00004d;
-			    font-size: normal;
+			    font-size: 20px;
 			}
 			#div2 {
 			    height:10%;
@@ -18,7 +18,7 @@
 			    float: right;
 			    text-align: left;
 			    color:#00004d;
-			    font-size: normal;
+			    font-size: 20px;
 			}
 
 			#div3 {
@@ -26,28 +26,28 @@
 			    width: 50%;
 			    float: right;
 			    color:#00004d;
-			    font-size: normal;
+			    font-size: 20px;
 			}
 			#div4 {
 			    height:10%;
 			    width: 50%;
 			    float: left;
 			    color:#00004d;
-			    font-size: normal;
+			    font-size: 20px;
 			}
 			#div5 {
 			    height:10%;
 			    width: 50%;
 			    float: left;
 			    color:#00004d;
-			    font-size: normal;
+			    font-size: 20px;
 			}
 			#div6 {
 			    height:10%;
 			    width: 50%;
 			    float: left;
 			    color:#00004d;
-			    font-size: normal;
+			    font-size: 20px;
 			}
 			#footer {
 			     text-shadow: white;
@@ -75,7 +75,7 @@
 				<P style="margin: 10px 10px 10px 10px; ">Cox's Bazar (Bengali: কক্সবাজার Kôks bajar) is a town, a fishing port and district headquarters in Bangladesh. The beach in Cox's Bazar is an unbroken 125 km sandy sea beach with a gentle slope, one of the world's longest.[2][3][4] It is located 150 km south of the industrial port Chittagong. Cox's Bazar is also known by the name Panowa, whose literal translation means "yellow flower." Its other old name was "Palongkee".
 				The modern Cox's Bazar derives its name from Captain Hiram Cox (died 1799), an officer of the British East India Company. Cox was appointed Superintendent of Palongkee outpost after Warren Hastings became Governor of Bengal. Captain Cox was specially mobilised to deal with a century-long conflict between Arakan refugees and local Rakhains. He embarked upon the task of rehabilitating refugees in 
 					<div id="footer">
-						<p><a href="#">Details</a></p>
+						<p><a href="coxs.php">Details</a></p>
 					</div>
 				</P>
 			
