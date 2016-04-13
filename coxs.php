@@ -2,27 +2,28 @@
 <?php
 	require_once('nav.php');
 ?>
-<html>
+<html  style="background-color:#D2D2D2">
 <head>
 	<title> Cox's Bazar</title>
 	<br/><br/>
 	<h1 style="text-align: center;">Visit Cox's Bazar</h1>
 	<style>
-		#place {
+		.place {
 		   float: left;
 		   margin: 10px;
 		   padding: 10px;
 		   width: auto;
 		   height: auto;
+		   background-color: #E9EAED;
 		   border: 3px ridge  #a6a6a6;
 		   font-size: 20px;
 		} 
 	</style>
 </head>
 <body>
-<div id="place">
+<div class="place" style="text-align: justify;font:bold 20px Arial, Helvetica;">
 
-			<h2 style="text-align: center;">Himchori Waterfall</h2>
+			<h2 style="text-align: center;"><u>Himchori Waterfall</u></h2>
 			<img src="img/himchori.jpg" height="200" width="auto" alt="cox's bazar" align="left" style="margin: 5px 10px 5px 10px;">
 			<img src="img/himchori2.jpg" height="200" width="auto" alt="cox's bazar" align="right" style="margin: 5px 5px 5px 5px;">
 				<P>Many attractions are for the tourists around Cox's Bazar. You can go Himchori to see it's Waterfall, this is famous for waterfall, though in the winter season it dwindles but during the rainy season it's really a fabulous and full waterfall can be enjoyed.
@@ -36,15 +37,25 @@
 
 	</div>
 
-<div id="place">
+<div class="place" style="text-align: justify;font:bold 20px Arial, Helvetica;">
 
-			<h2 style="text-align: center;">Inani Beach</h2>
+			<h2 style="text-align: center;"><u>Inani Beach</u></h2>
 			<img src="img/inani2.jpg" height="200" width="auto" alt="cox's bazar" align="left" style="margin: 5px 10px 5px 10px;">
 			<img src="img/inani.jpg" height="200" width="auto" alt="cox's bazar" align="right" style="margin: 5px 5px 5px 5px;">
 			<p>Inani Beach is within Ukhia Thana, 35 km. to the south of Cox's Bazar.With green hills to the east, the golden beach of Inani casts a music spell on anyone stepping on to its fine golden sands. The clean blue waters of the Bay are ideal for swimming. 
 			It is considered the world's longest and broadest beach: 180m at high tide and 300m at low tide.</p>
 			<p>To get here, take a bus to Teknaf and get off at Court Bazar (30km), a tiny village 2km before Ukhia. From there, you can rickshaw or tempo west to the beach, 10 km away. If you're headed for the guesthouse, ask the rickshaw driver to let you off at the tiny village of Sonarpara. From there, walk south until you reach the guesthouse. Alternatively, hire a jeep from Cox's Bazar to take you directly to Inani using the scenic beach route. </p>
 			<p><b>Note: </b>Every year numerous foreign and local tourists come here to spend their leisure in Inani Beach. However, it lacks several amenities that visitors can expect. It is wise to take a packed lunch and water with you when you visit the beach. But those people who have taken the time to explore the beach can testify that its beauty and cool breeze far outweighs anything it might be lacking in amenities. When visiting Inani Beach, ensure you have camera along to capture the amazing sight of the sun setting over the sea. </p>
+
+
+	</div>
+
+	<div class="place" style="text-align: justify;font:bold 20px Arial, Helvetica;">
+
+			<h2 style="text-align: center;"><u>Laboni Beach</u></h2>
+			<img src="img/cox.jpg" height="200" width="auto" alt="cox's bazar" align="left" style="margin: 5px 10px 5px 10px;">
+			<img src="img/laboni.jpg" height="200" width="auto" alt="cox's bazar" align="right" style="margin: 5px 5px 5px 5px;">
+			<p>Laboni Beach is the main beach of Cox's Bazar. At here we can easily enjoy the scenic beauty of Bay of Bengal. Its a place for enjoyment, many people come here including the foreigners. The beach is well appreciated during sunsets and sunrise, where people can witness the sea as it changes its colors twice in a day.<br/><br/>Visitors can sunbathe, surf, jog, cycle, and swim. It is best for swimming and relaxation.Close to the beach, there are a lot of small shops selling souvenirs, locally made cigars and beauty products (sandal wood based), handmade clothes, bed sheets, dresses, shoes and beach accessories to the tourists.It is a nice place for our tourism. So, come and lets enjoy the beauty of Laboni Beach. Also <b>Kolatoli </b>and <b>Sugondha</b> beaches are very famous among the tourists. </p>
 
 
 	</div>

@@ -15,7 +15,7 @@
 		</a>
 		<nav>
 		    <ul>
-		    	<!-- <li><a href="#"><img src="img/bnc_logo.gif"></a></li> -->
+		    	<li><a href="index.php"><span>Home</span></a></li>
 		    	<li><a href="destination.php"><span>Destination</span></a></li>
 		        <li><a href="#"><span>Recomended Places</span></a></li>
 		        <li><a href="#"><span>Route </span></a></li>
