@@ -1,0 +1,47 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	margin-top: 60px;
+	margin-left: 20px;
+}
+.place {   
+		   margin-left: 20px;
+		   margin-right: 20px;
+		   float: left;
+		   margin: 10px;
+		   padding: 20px;
+		   width: 45%;
+		   height: auto;
+		   color:#00004d;
+		   background-color: #F4FAFF;
+		   border: 3px ridge  #a6a6a6;
+		   text-align: justify;
+		   font: 16px Arial, Helvetica;
+		} 
+
+h1{margin-top: 20px;
+}
+
+.place h1,h3,img{
+	text-align: center;
+}
+
+.place img{
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	height: 300px;
+	width: 500px;
+}
+.place p{
+
+	margin-top: 10px;
+}
+.place a {
+	float: right;
+}
+
+/*hello wahid make every css page beautiful*/
