@@ -63,7 +63,7 @@ nav span {
     padding: 4px 15px;
     cursor: pointer;    
     background-color: #bb413b;
-    background-image: linear-gradient(green, #aa2618);
+    background-image: linear-gradient(#aa2618, #aa2618);
 }
 
 nav a:hover span {   
