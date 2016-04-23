@@ -5,13 +5,25 @@
 <html>
 <head>
 	<title> St. Martin's Island</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/place.css">
 	<h1>Visit St. Martin's Island</h1>
+
 </head>
 <body>
 <div class="place">
 
 			<h2><u>St. Martin's Island</u></h2>
+			<button class="btn btn-primary" role="button" id="StBtn" onclick="myFunction1()">Add To favorite</button>
+
+				<script>
+					function myFunction1() {
+					    document.getElementById("StBtn").innerHTML = "Added To Favorites";
+					}
+				</script>
+			<a href="coxs.php" class="btn btn-primary" role="button">Find in Maps</a><br/><br/>
 			<img src="img/saintmartin2.jpg" height="300" width="450" alt="cox's bazar" align="left">
 			<img src="img/saintmartin4.jpg" height="300" width="500" alt="cox's bazar" align="right">
 			<p>St. Martins Island is the most beautiful Coral Island where you will find live corals. Its only 30 km from Teknaf and you can go there by local motorboat, tourist boats, or sea truck.[Coral Beach at St. Martins Island]	
@@ -27,6 +39,8 @@
 			Overnight staying in St. Martins Island is really an exotic feeling where you will feel and listen the sound of Sea. If you are lucky enough then you can spend the exotic moonlit night at St. Martins Island. The beauty of Full moon in St. Martins Island cannot be expressed, if you are not there at that time.<br/><br/>
 
 			<b style="font-size: 25px;">Cheera-dwip</b> is a part of St. Martins Island but divided during tides. You can go to Cheera-dwip by walking. About two and a half hours walk from St. Martins Island or you can go there also by local motorboat or tourist boat. In that Island you will find the Corals - living and dead all over the Island. A small bush is there which in the only green part of Cheera-dwip, enhancing the beauty of this island. People do not live in this Island, so advisable for the tourists to go there early and come back by afternoon.</p>
+
+			
 			
 
 	</div>

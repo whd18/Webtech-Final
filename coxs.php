@@ -25,14 +25,14 @@
 				Park is a beautiful tropical rain forest (evergreen and semi-ever-green) around the South Asia. The park was established in 1980. This place is maintained, protected and secured by the government for the foreign tourists and the local visitors. The Park is not only attractive for the tourists it is also attractive for the biologist. 
 				The park gets high forest, low forest and grasslands with a few trees. Around 58 species of trees, 4 species grasses, 15 species of shrubs, 19 climbers and 21 species of herbs altogether 117 plant species are available here. In the forest area there are at least twenty kinds of important herbs like Curculigorecurvata, Swintonia floribunda and Alpinianigra are available which most valuable plant are for the biologist. 
 				<br/><b>Note: </b>You can reach Himchari only by the beach. So, ensure you are back to town before high tide rise in the evening. It is not wise to stay here after sunset.</p><br/>
-				<button class="btn btn-info" role="button" id="HimBtn" onclick="myFunction1()">Add To favorite</button>
+				<button class="btn btn-primary" role="button" id="HimBtn" onclick="myFunction1()">Add To favorite</button>
 
 				<script>
 					function myFunction1() {
-					    document.getElementById("HimBtn").innerHTML = "Added To Favorites";
+					    document.getElementById("HimBtn").innerHTML = "💕 Added To Favorites";
 					}
 				</script>
-				
+			<a href="map/himchori.html" target="_Blank" class="btn btn-primary" role="button">Find in Maps</a>
 
 	</div>
 
@@ -45,7 +45,14 @@
 			It is considered the world's longest and broadest beach: 180m at high tide and 300m at low tide.</p>
 			<p>To get here, take a bus to Teknaf and get off at Court Bazar (30km), a tiny village 2km before Ukhia. From there, you can rickshaw or tempo west to the beach, 10 km away. If you're headed for the guesthouse, ask the rickshaw driver to let you off at the tiny village of Sonarpara. From there, walk south until you reach the guesthouse. Alternatively, hire a jeep from Cox's Bazar to take you directly to Inani using the scenic beach route. </p>
 			<p><b>Note: </b>Every year numerous foreign and local tourists come here to spend their leisure in Inani Beach. However, it lacks several amenities that visitors can expect. It is wise to take a packed lunch and water with you when you visit the beach. But those people who have taken the time to explore the beach can testify that its beauty and cool breeze far outweighs anything it might be lacking in amenities. When visiting Inani Beach, ensure you have camera along to capture the amazing sight of the sun setting over the sea. </p>
+			<button class="btn btn-primary" role="button" id="InanBtn" onclick="myFunction2()">Add To favorite</button>
 
+				<script>
+					function myFunction2() {
+					    document.getElementById("InanBtn").innerHTML = "Added To Favorites";
+					}
+				</script>
+			<a href="map/inani.html" target="_Blank" class="btn btn-primary" role="button">Find in Maps</a>
 
 	</div>
 
@@ -55,6 +62,15 @@
 			<img src="img/cox.jpg" height="200" width="auto" alt="cox's bazar" align="left">
 			<img src="img/laboni.jpg" height="200" width="auto" alt="cox's bazar" align="right">
 			<p>Laboni Beach is the main beach of Cox's Bazar. At here we can easily enjoy the scenic beauty of Bay of Bengal. Its a place for enjoyment, many people come here including the foreigners. The beach is well appreciated during sunsets and sunrise, where people can witness the sea as it changes its colors twice in a day.<br/><br/>Visitors can sunbathe, surf, jog, cycle, and swim. It is best for swimming and relaxation.Close to the beach, there are a lot of small shops selling souvenirs, locally made cigars and beauty products (sandal wood based), handmade clothes, bed sheets, dresses, shoes and beach accessories to the tourists.It is a nice place for our tourism. So, come and lets enjoy the beauty of Laboni Beach. Also <b>Kolatoli </b>and <b>Sugondha</b> beaches are very famous among the tourists. </p>
+
+			<button class="btn btn-primary" role="button" id="LabBtn" onclick="myFunction3()">Add To favorite</button>
+
+				<script>
+					function myFunction3() {
+					    document.getElementById("LabBtn").innerHTML = "Added To Favorites";
+					}
+				</script>
+			<a href="map/laboni.php" target="_Blank" class="btn btn-primary" role="button">Find in Maps</a>
 
 
 	</div>

@@ -17,7 +17,7 @@
 	<p>Type: By Road</p>
 	<p>Duration: Aprox. 10 Hours</p>
 
-	<a href="map/dhktocoxroad.php" target="_blank" class="btn btn-info" role="button">Find Route</a>
+	<a href="map/dhktocoxroad.php" target="_blank" class="btn btn-primary" role="button">Find Route</a>
 </div>
 
 <div class="place">
@@ -25,15 +25,15 @@
 	<img src="img/air.jpg" alt="air" align="center" height="200" width="300">
 	<p>Type: By Air</p>
 	<p>Duration: Aprox. Half An Hour</p>
-	<a href="map/dhktocox.php" target="_blank" class="btn btn-info" role="button">Find Route</a>
+	<a href="map/dhktocox.php" target="_blank" class="btn btn-primary" role="button">Find Route</a>
 </div>
 
 <div class="place">
-	<h2>Dhaka To Sundarbanr</h2>
+	<h2>Dhaka To Sundarban</h2>
 	<img src="img/bus.png" alt="air" align="center" height="200" width="300">
 	<p>Type: By Road</p>
 	<p>Duration: Aprox. Half An Hour</p>
-	<a href="map/dhktocox.php" target="_blank" class="btn btn-info" role="button">Find Route</a>
+	<a href="map/dhktocox.php" target="_blank" class="btn btn-primary" role="button">Find Route</a>
 </div>
 
 <div class="place">
@@ -41,7 +41,7 @@
 	<img src="img/bus.png" alt="air" align="center" height="200" width="300">
 	<p>Type: By Road</p>
 	<p>Duration: Aprox. Half An Hour</p>
-	<a href="map/dhktocox.php" target="_blank" class="btn btn-info" role="button">Find Route</a>
+	<a href="map/dhktocox.php" target="_blank" class="btn btn-primary" role="button">Find Route</a>
 </div>
 
 <div class="place">
@@ -49,7 +49,7 @@
 	<img src="img/air.jpg" alt="air" align="center" height="200" width="300">
 	<p>Type: By Air</p>
 	<p>Duration: Aprox. Half An Hour</p>
-	<a href="map/dhktocox.php" target="_blank" class="btn btn-info" role="button">Find Route</a>
+	<a href="map/dhktocox.php" target="_blank" class="btn btn-primary" role="button">Find Route</a>
 </div>
 
 <div class="place">
@@ -57,7 +57,7 @@
 	<img src="img/bus.png" alt="air" align="center" height="200" width="300">
 	<p>Type: By Road</p>
 	<p>Duration: Aprox. Half An Hour</p>
-	<a href="map/dhktocox.php" target="_blank" class="btn btn-info" role="button">Find Route</a>
+	<a href="map/dhktocox.php" target="_blank" class="btn btn-primary" role="button">Find Route</a>
 </div>
 </body>
 </html>
