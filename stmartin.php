@@ -2,37 +2,25 @@
 <?php
 	require_once('nav.php');
 ?>
-<html  style="background-color:#D2D2D2">
+<html>
 <head>
 	<title> St. Martin's Island</title>
-	<br/><br/>
-	<h1 style="text-align: center;">Visit St. Martin's Island</h1>
-	<style>
-		.place {
-		   float: left;
-		   margin: 10px;
-		   padding: 10px;
-		   width: auto;
-		   height: auto;
-		   background-color: #E9EAED;
-		   border: 3px ridge  #a6a6a6;
-		   font-size: 20px;
-		} 
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/place.css">
+	<h1>Visit St. Martin's Island</h1>
 </head>
 <body>
-<div class="place" style="text-align: justify;font:bold 20px Arial, Helvetica;">
+<div class="place">
 
-			<h2 style="text-align: center;"><u>St. Martin's Island</u></h2>
-			<img src="img/saintmartin2.jpg" height="300" width="450" alt="cox's bazar" align="left" style="margin: 5px 15px 5px 10px;">
-			<img src="img/saintmartin4.jpg" height="300" width="500" alt="cox's bazar" align="right" style="margin: 5px 10px 5px 15px;">
+			<h2><u>St. Martin's Island</u></h2>
+			<img src="img/saintmartin2.jpg" height="300" width="450" alt="cox's bazar" align="left">
+			<img src="img/saintmartin4.jpg" height="300" width="500" alt="cox's bazar" align="right">
 			<p>St. Martins Island is the most beautiful Coral Island where you will find live corals. Its only 30 km from Teknaf and you can go there by local motorboat, tourist boats, or sea truck.[Coral Beach at St. Martins Island]	
 			This small coral island about 10km (6mi) southwest of the southern tip of the mainland is a tropical cliché, with beaches fringed with coconut palms and bountiful marine life.<br/> There’s nothing more strenuous to do here than soak up the rays, but it’s a clean and peaceful place without even a mosquito to disrupt your serenity.
 			
 			It’s possible to walk around the island in a day because it measures only 8 sq km (3 sq mi), shrinking to about 5 sq km (2 sq mi) during high tide.
 			In this Island, you will find the beautiful Coral reef and long Coral beach and lots of coconut trees. The local name of the coconut is Narikel and the original name of this Island is Narikel Jinjira is derived from that. Accommodation in St. Martins Island is limited, so it is advisable to book accommodation before you plan to go to this Island.<br/> Motel Nijhum is one of the best hotels in St. Martins Island. To book in Motel Nijhum, confirm you reservation from Dhaka. You will hardly get a chance to stay in this hotel if you are a sudden visitor of St. Martins Island. The other good hotels are Prashad Paradisea nd Sraboni Bilash. <br/>
-			<img src="img/saintmartin3.jpg" height="400" width="500" alt="cox's bazar" align="right" style="margin: 10px 5px 10px 15px;">
-			<img src="img/saintmartin.jpg" height="400" width="450" alt="cox's bazar" align="left" style="margin: 10px 15px 10px 10px;">
+			<img src="img/saintmartin3.jpg" height="400" width="500" alt="cox's bazar" align="right">
+			<img src="img/saintmartin.jpg" height="400" width="450" alt="cox's bazar" align="left">
 			[Wild Orchides in the coconut Garden at St. Martins Island]
 			Booking of these hotels are also possible from Dhaka. All these three hotels are situated adjacent to Seashore. From these hotels lobby or veranda, you can enjoy the Sea. There are some other motels and hotels established in St. Martins Island.<br/>
 			
