@@ -2,6 +2,9 @@
 	margin: 0px;
 	padding: 0px;
 }
+html{
+	background-color: #D2D2D2;
+}
 body{
 	margin-top: 60px;
 	margin-left: 20px;

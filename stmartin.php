@@ -23,8 +23,8 @@
 					    document.getElementById("StBtn").innerHTML = "Added To Favorites";
 					}
 				</script>
-			<a href="coxs.php" class="btn btn-primary" role="button">Find in Maps</a><br/><br/>
-			<img src="img/saintmartin2.jpg" height="300" width="450" alt="cox's bazar" align="left">
+			<a href="coxs.php" class="btn btn-primary" role="button">Find in Maps</a><br/><br/><br/>
+			<img src="img/saintmartin2.jpg" height="300" width="500" alt="cox's bazar" align="left">
 			<img src="img/saintmartin4.jpg" height="300" width="500" alt="cox's bazar" align="right">
 			<p>St. Martins Island is the most beautiful Coral Island where you will find live corals. Its only 30 km from Teknaf and you can go there by local motorboat, tourist boats, or sea truck.[Coral Beach at St. Martins Island]	
 			This small coral island about 10km (6mi) southwest of the southern tip of the mainland is a tropical cliché, with beaches fringed with coconut palms and bountiful marine life.<br/> There’s nothing more strenuous to do here than soak up the rays, but it’s a clean and peaceful place without even a mosquito to disrupt your serenity.

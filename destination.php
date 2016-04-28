@@ -2,7 +2,7 @@
 <?php
 	require_once('nav.php');
 ?>
-<html>
+<html style="background-color: #D2D2D2;">
 <head>
 	<title> Destination</title>
 

@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Cox's Bazar road</title>
+<title>Sylhet Road Route</title>
+<title>Sundarban Route</title>
 <script
 src="http://maps.googleapis.com/maps/api/js">
 </script>
 
 <script>
 var Dhaka=new google.maps.LatLng(23.71549,90.42677);
-var comilla=new google.maps.LatLng(23.43310,91.17644);
-var feni=new google.maps.LatLng(23.01411,91.39617);
-var chittagong=new google.maps.LatLng(22.36638,91.83322);
-var satkania=new google.maps.LatLng(22.09762,92.08556);
-var Cox=new google.maps.LatLng(21.43946,92.00773);
+var barmmanbaria=new google.maps.LatLng(23.96043,91.09604);
+var habigonj=new google.maps.LatLng(24.37139,91.42151);
+var sylhet=new google.maps.LatLng(24.89110,91.86306);
 
 
 function initialize()
 {
 var mapProp = {
-  center:chittagong,
-  zoom:8,
+  center:habigonj,
+  zoom:9,
   mapTypeId:google.maps.MapTypeId.ROADMAP
   };
   
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-var myTrip=[Dhaka,comilla,feni,chittagong,satkania,Cox];
+var myTrip=[Dhaka,barmmanbaria,habigonj,sylhet];
 var flightPath=new google.maps.Polyline({
   path:myTrip,
   strokeColor:"Green",
   strokeOpacity:0.8,
   strokeWeight:5
   });
+
+
 
 flightPath.setMap(map);
 }

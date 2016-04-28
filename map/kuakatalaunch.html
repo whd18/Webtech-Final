@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Cox's Bazar road</title>
+<title>Kuakata Launch Route</title>
 <script
 src="http://maps.googleapis.com/maps/api/js">
 </script>
 
 <script>
-var Dhaka=new google.maps.LatLng(23.71549,90.42677);
-var comilla=new google.maps.LatLng(23.43310,91.17644);
-var feni=new google.maps.LatLng(23.01411,91.39617);
-var chittagong=new google.maps.LatLng(22.36638,91.83322);
-var satkania=new google.maps.LatLng(22.09762,92.08556);
-var Cox=new google.maps.LatLng(21.43946,92.00773);
+var sadarghat=new google.maps.LatLng(23.70565,90.40967);
+var boktaboli=new google.maps.LatLng(23.60862,90.45872);
+var chandpur=new google.maps.LatLng(23.23036,90.63337);
+var mehendiganj=new google.maps.LatLng(22.88226,90.55578);
+var ghat=new google.maps.LatLng(22.70120,90.37497);
+var barisal=new google.maps.LatLng(22.67302,90.34399);
+var patuakhali=new google.maps.LatLng(22.35205,90.31927);
+var kuakata=new google.maps.LatLng(21.81687,90.12092);
 
 
 function initialize()
 {
 var mapProp = {
-  center:chittagong,
+  center:mehendiganj,
   zoom:8,
   mapTypeId:google.maps.MapTypeId.ROADMAP
   };
   
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-var myTrip=[Dhaka,comilla,feni,chittagong,satkania,Cox];
+var myTrip=[sadarghat,boktaboli,chandpur,mehendiganj,ghat,barisal,patuakhali,kuakata];
 var flightPath=new google.maps.Polyline({
   path:myTrip,
   strokeColor:"Green",
