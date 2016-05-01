@@ -5,7 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,600,800' rel='stylesheet' type='text/css'>
-
+	<script src="js/jQuery.js"></script>
+	<script src="js/package.js"></script>
+	
 </head>
 <body>
 
