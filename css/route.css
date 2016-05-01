@@ -1,0 +1,56 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html{
+	background-color:#D2D2D2
+}
+body{
+	margin-top: 60px;
+	margin-left: 20px;
+}
+.place {
+	float: left;
+	margin: 10px;
+	padding: 15px;
+	width: 385px;
+	height: 460px;
+	background-color: #F4FAFF;
+	border: 3px ridge  #a6a6a6;
+	 text-align: justify;
+	 font:bold 20px Arial, Helvetica;
+} 
+h1{
+	text-align: center;
+	background-color: #D2D2D2
+}
+
+.place h2{
+	padding: 10px;
+	text-align: center;
+	color: #000033;
+	 border: 2px solid;
+    padding: 8px;
+    background: #dddddd;
+    border-top-right-radius: 1em;
+}
+
+.place img{
+		display: block;
+	 margin-left: auto;
+    margin-right: auto;
+}
+.place p{
+	text-align: center;
+	margin: 5px;
+	color:#00004d;
+}
+.place a{
+	display: block;
+	 margin-left: auto;
+    margin-right: auto;
+}
+.place label{
+	font-size: 13px;
+	color: gray;
+}
