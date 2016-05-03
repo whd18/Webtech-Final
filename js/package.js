@@ -17,7 +17,7 @@
 	
 
 function getState(val) {
-         alert(val);
+    
       
      
          $.ajax({

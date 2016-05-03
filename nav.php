@@ -1,3 +1,7 @@
+<?php 
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +25,7 @@
 		    	<li><a href="destination.php"><span>Destination</span></a></li>
 		        <li><a href="#"><span>Recomended Places</span></a></li>
 		        <li><a href="route.php"><span>Route </span></a></li>
-		        <li><a href="#"><span>Package</span></a></li>             
+		        <li><a href="sample.php"><span>Package</span></a></li>             
 		        <li><a href="signIn.php"><span>Sign In </span></a></li>
 		        <li><a href="#"><span>Contact Us</span></a></li>
 		    </ul>

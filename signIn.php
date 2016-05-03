@@ -1,69 +1,64 @@
-<!DOCTYPE html>
 <?php
-	require_once('nav.php');
+session_start();
+if(isset($_SESSION['name']))
+{	
+	//if a user logged in then this page will redirect to his profile page
+	header("Location:index.php");
+}
 ?>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Sign In</title>
-	<link rel="stylesheet" type="text/css" href="css/signin.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<meta charset="UTF-8">
+<title>Example of Bootstrap 3 Horizontal Form Layout</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+    <script src="js/jQuery.js"></script>
+    <script src="js/signin.js"></script>
+    
+<style type="text/css">
+    .bs-example{
+    	margin: 20px;
+    }
+	/* Fix alignment issue of label on extra small devices in Bootstrap 3.2 */
+    .form-horizontal .control-label{
+        padding-top: 7px;
+    }
+</style>
 </head>
 <body>
-		<div class="signin">
-		<label>User Name :</label>
-		<input type="text" id="uname"></input><br/><br/>
-		<label>Password  :</label>
-		<input type="password" id="pass"></input><br/><br/>
-		<a href="#">Forgot Password</a>	
-			<a href="#" class="btn btn-success" role="button">Sign In</a>
-				
-	</div>
-
-
-	<div class="signup">
-	<p>Create Your Account</p>
-	<h3>Sign Up Now and Enjoy Exciting Offers.</h3>
-
-	<label>Full Name: </label>
-	<input type="text" id="fullname"></input><br/><br/>
-
-	<label>Email: </label>
-	<input type="email" id="email"></input><br/><br/>
-
-	<label>Set User Name: </label>
-	<input type="text" id="username"></input><br/><br/>
-
-
-	<label>Set Seurity Question: </label>
-	<textarea id="sequs"></textarea><br/><br/><br/>
-
-	<label>Set Answer: </label>
-	<textarea id="seans"></textarea><br/><br/><br/>
-
-	<label>Password: </label>
-	<input type="password" id="pass"></input><br/><br/>
-
-	<label>Confirm Password: </label>
-	<input type="password" id="confirmpass"></input><br/><br/>
-			 
-	<a href="#" class="btn btn-success" role="button">Sign Up</a>
-
-	
-	</div>
-
-	<div class="extra">
-		<a href="coxs.php" style="font-size: 50px">Cox's Bazar</a>
-		<a href="sylhet.php" style="font-size: 30px">Sylhet</a>
-		<a href="kuakata.php" style="font-size: 20px">Kuakata</a>
-		<a href="sundarban.php" style="font-size: 30px">Hiron</a>
-		<a href="stmartin.php" style="font-size: 50px">St. Martin</a>
-		<a href="sundarban.php" style="font-size: 55px">Sundarban</a>
-		<a href="coxs.php" style="font-size: 30px">Laboni</a>
-		<a href="sylhet.php" style="font-size: 30px">Lalakhal</a>
-		<a href="bandarban.php" style="font-size: 55px">Boga Lake</a>
-				
-	</div>
+<center>
+<div class="bs-example" style="width:300px;">
+    <form class="form-horizontal" method="post">
+        <div class="form-group">
+            <center><h1>LOGIN</h1></center>
+            <label for="inputEmail" class="control-label col-xs-2" style="margin-right:50px; "> USERNAME: </label>
+            <div class="col-xs-10">
+                <input type="text" class="form-control" id="uname" placeholder="UserName" >
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword" class="control-label col-xs-2"style="margin-right:50px; ">PASSWORD: </label>
+            <div class="col-xs-10">
+                <input type="password" class="form-control" id="pass" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group" id="result">
+            
+        </div>
+        <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-10">
+                <button type="button" class="btn btn-primary" id="submit">Login</button>
+            </div>
+        </div>
+    </form>
+    <div id="finish">
+    	hello
+    </div>
+</div>
+</center>
 </body>
-</html>
+</html>                
