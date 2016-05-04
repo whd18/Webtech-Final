@@ -100,7 +100,7 @@
 		<h4>HOW MANY MEMBERS</h4>
 	<input type="text"  id="member" onkeyup="showHint(this.value)"></input>
 
-	<button id="Get" onclick="clickbtn() ;" >SHOW TOTAL COST</button>
+	<button id="Get"  class="btn btn-primary" onclick="clickbtn() ;" >SHOW TOTAL COST</button>
 
 
 </div>
@@ -120,12 +120,13 @@ $pack=$_POST['package'];
 $member=$_POST['member'];
 
 
-$query="SELECT price FROM accomodation WHERE hotel='$hotel'";
+$query="SELECT price,hotel FROM accomodation WHERE hotel='$hotel'";
 $res=mysql_query($query);
 
 while ($row=mysql_fetch_array($res)) {
 	
 	$priceHotel= $row['price'];
+	$hotelName=$row['hotel'];
 }
 
 
@@ -199,14 +200,14 @@ $totalPrice=$priceDay*$member*($priceHotel+$priceGuide);
   $_SESSION['member']=$member;
   $_SESSION['day']=$priceDay;
   $_SESSION['total']=$totalPrice;
-
+  $_SESSION['hotelName']=$hotelName;
   
 
 ?>
 
   <form method="post" action="insert.php">
 
-  	<input type="submit" value="ADD TO FAVOURITE"></input>
+  	<input type="submit" value="ADD TO FAVOURITE"  class="btn btn-primary"></input>
   </form>
   </center>
 </div>
