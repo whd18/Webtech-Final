@@ -50,13 +50,15 @@ if(isset($_SESSION['name']))
             
         </div>
         <div class="form-group">
-            <div class="col-xs-offset-2 col-xs-10">
-                <button type="button" class="btn btn-primary" id="submit">Login</button>
+            <div class="col-xs-offset-2 col-xs-10" >
+            <a style="margin: 10px; float: left;" href="signup.php">Create Account</a>
+                <button type="button" class="btn btn-primary" id="submit">Login</button> 
+
             </div>
         </div>
     </form>
     <div id="finish">
-    	hello
+
     </div>
 </div>
 </center>

@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html>
+<?php
+		require_once('db.php');
+		require_once('nav.php');
+
+	?>
+<html style="margin-top: 60px;">
 <head>
 	<title></title>
 
@@ -7,9 +12,7 @@
 	<script type="text/javascript" src="js/package.js"></script>
 </head>
 <body>
-	<?php
-		require_once('db.php');
-	?>
+	
 
 	<select onchange="getState(this.value);">
 		<option value="">-select-</option>

@@ -17,13 +17,12 @@
 
 	<Header >
 		<a href="index.php" id="logo">
-			<img src="img/logo.jpg">
+			<img src="img/logo.png">
 		</a>
 		<nav>
 		    <ul>
 		    	<li><a href="index.php"><span>Home</span></a></li>
 		    	<li><a href="destination.php"><span>Destination</span></a></li>
-		        <li><a href="#"><span>Recomended Places</span></a></li>
 		        <li><a href="route.php"><span>Route </span></a></li>
 		        <li><a href="sample.php"><span>Package</span></a></li>             
 		        <li><a href="signIn.php"><span>Sign In </span></a></li>

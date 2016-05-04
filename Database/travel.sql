@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.7.1
+-- version 4.2.11
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 03, 2016 at 07:08 PM
--- Server version: 5.5.39
--- PHP Version: 5.4.31
+-- Generation Time: May 04, 2016 at 04:31 PM
+-- Server version: 5.6.21
+-- PHP Version: 5.6.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `accomodation` (
   `hotel` varchar(50) NOT NULL,
   `price` int(50) NOT NULL,
   `place` varchar(50) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=24 ;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `accomodation`
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `destination` (
 `id` int(10) NOT NULL,
   `destination` varchar(50) NOT NULL,
   `guide` int(10) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `destination`
@@ -94,7 +94,7 @@ INSERT INTO `destination` (`id`, `destination`, `guide`) VALUES
 CREATE TABLE IF NOT EXISTS `package` (
 `id` int(10) NOT NULL,
   `package` varchar(50) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `package`
@@ -119,7 +119,7 @@ CREATE TABLE IF NOT EXISTS `picture` (
   `type` varchar(100) NOT NULL,
   `place` varchar(100) NOT NULL,
   `user` varchar(100) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `picture`
@@ -127,7 +127,9 @@ CREATE TABLE IF NOT EXISTS `picture` (
 
 INSERT INTO `picture` (`id`, `name`, `fpath`, `type`, `place`, `user`) VALUES
 (13, '10294371_1023497534363860_7483577546571930599_n.jpg', 'uploads/10294371_1023497534363860_7483577546571930599_n.jpg', 'image/jpeg', 'bandarban', 'rakib'),
-(14, '13087762_1141167192572214_9012831564467864115_n.jpg', 'uploads/13087762_1141167192572214_9012831564467864115_n.jpg', 'image/jpeg', 'bandarban', 'rakib');
+(14, '13087762_1141167192572214_9012831564467864115_n.jpg', 'uploads/13087762_1141167192572214_9012831564467864115_n.jpg', 'image/jpeg', 'bandarban', 'rakib'),
+(15, 'mash.jpg', 'uploads/mash.jpg', 'image/jpeg', 'bandarban', 'rakib'),
+(16, 'tamim.jpg', 'uploads/tamim.jpg', 'image/jpeg', 'bandarban', 'rakib');
 
 -- --------------------------------------------------------
 
@@ -139,18 +141,19 @@ CREATE TABLE IF NOT EXISTS `user` (
   `name` varchar(50) DEFAULT NULL,
   `email` varchar(50) DEFAULT NULL,
   `uname` varchar(50) NOT NULL,
-  `password` varchar(50) DEFAULT NULL
+  `password` varchar(50) DEFAULT NULL,
+  `opinion` varchar(1000) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`name`, `email`, `uname`, `password`) VALUES
-('asd', 'asd', 'asd', 'asd'),
-('ra', 'ads', 'eas', '123'),
-('rakib', 'rakib@mail.com', 'rakib', '123'),
-('wahid', 'wahid@mail.com', 'wahid', '123');
+INSERT INTO `user` (`name`, `email`, `uname`, `password`, `opinion`) VALUES
+('Fahim', 'asd', 'asd', 'asd', 'Enjoyed the tour very much.\r\nWant Something new and exciting.'),
+('Tamim', 'ads', 'eas', '123', 'Cox''s Bazar Is so beautiful. I want to Vist there again :)'),
+('rakib', 'rakib@mail.com', 'rakib', '123', 'Bangladesh is a beautiful Country.'),
+('wahid', 'wahid@mail.com', 'wahid', '123', 'It was A nice Tour. Enjoyed Every Moment of it. :D');
 
 --
 -- Indexes for dumped tables
@@ -209,7 +212,7 @@ MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 -- AUTO_INCREMENT for table `picture`
 --
 ALTER TABLE `picture`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

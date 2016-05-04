@@ -37,7 +37,7 @@ nav a {
     padding: 3px;
     text-decoration: none;
     border: 1px solid #831608;
-    font: bold 15px Arial, Helvetica;   
+    font: bold 18px Arial, Helvetica;   
     background-color: #831608;
     background-image: linear-gradient(#bb413b, #831608);
     border-radius: 8px;
@@ -63,7 +63,7 @@ nav span {
     padding: 4px 15px;
     cursor: pointer;    
     background-color: #bb413b;
-    background-image: linear-gradient(#aa2618, #aa2618);
+    background-image: linear-gradient(#bb413b, #aa2618);
 }
 
 nav a:hover span {   
@@ -86,7 +86,7 @@ nav a:hover span {
 #slider img{
 
 	width: 100%;
-	height: 440px;
+	height: auto;
 	display: block;
 	
 }
