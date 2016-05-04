@@ -50,7 +50,10 @@
              
               </tr>
               <tr>
-                  <td><a href="change.php"> CHANGE PROFILE PICTURE</a></td>
+                  <td><a href="watchlist.php"> WATCHLIST </a></td>
+              </tr>
+              <tr>
+                  <td><a href="fav-pac.php"> FAVOURITE PACKAGE</a></td>
               </tr>
               <tr>
                   <td><a href="password.php"> CHANGE PASSWORD </a></td>
