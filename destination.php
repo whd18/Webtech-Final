@@ -12,7 +12,7 @@
 
 	?>
 	
-<html style="background-color: #D2D2D2;">
+<html>
 <head>
 	<title> Destination</title>
 
@@ -23,7 +23,7 @@
 
 </head>
 <body>
-	
+<div class="all">
 	<div class="place">
 		
 
@@ -93,6 +93,6 @@
 			</p>
 			<a href="stmartin.php" class="btn btn-primary" role="button">Details</a>
 	</div>
-
+</div>
 </body>
 </html>
