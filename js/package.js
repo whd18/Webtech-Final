@@ -1,24 +1,11 @@
-// $(document).ready(function(){
-// 	$("#destination").change(function(){
-// 		var destination=$(this).val();
-// 		$ajax({
-// 			url:"package2.php",
-// 			method:"POST",
-// 			data:{place:destination},
-// 			dataType:"text",
-// 			success:function(data)
-// 			{
-// 				$("#accomodation").html(data);
-// 			}
-// 		});
-// 	});
-// });
-
-	
+    var retVAl1;
+    var retVal2;
+    var retVal3;
+    var NameValue;
 
 function getState(val) {
     
-      
+      retVAl1=val;
      
          $.ajax({
 
@@ -31,12 +18,13 @@ function getState(val) {
             
             }
          });
+        
 }
 
 function place(val) {
-         alert(val);
+       
         
-     
+      retVal2=val;
          $.ajax({
 
             type: 'POST',
@@ -48,53 +36,55 @@ function place(val) {
             
             }
          });
+        
 
 
 }
 
-// function clickbtn() {
-//    $.ajax({
-//       url:"sample.php",
-//       method:"POST",
-//       success:function(data){
-//          $('#live_data').html(data)
-//       }
+function packval(val)
+{
+    retVal3=val;
 
-//    });
-// }
+}
+  
+
+function showHint(val)
+{
+    NameValue=val;
+
+}
+  
+
 
 function clickbtn() {
-   var table='';
-   var rows=3;
-   var cols=3;
-   for (var i = 0; i <rows; i++) {
-     table += '<tr>';
-     for (var c = 1; c <= cols; c++) {
-        table +='<td>' + c + '</td>';
-     }
-     table += '</tr>';
-   }
-   document.write('<table>'+ table + '</table>');
+
+ 
+  alert(retVAl1);
+  alert(retVal2);
+  alert (retVal3);
+  alert (NameValue);
+
+   var urltopass='acc='+retVAl1+'&hotel='+retVal2+'&package='+retVal3+'&member='+NameValue;
+        $.ajax({
+
+            type:'POST',
+            url:'table.php',
+            data:urltopass,
+
+            success: function(html)
+            {
+                // $('#load').fadeOut('500',function(){
+                //  $('#load').css('display','block');
+                //    $('#load').html(html).show('slow');
+                // });
+                // if(html==3200)
+                // {
+                //      window.Location='table.php';
+                // }
+             alert(html);
+            }
+        });
+ 
+
 }
 
-// function getState(str) {
-//     if (str == "") {
-//         document.getElementById("accomodation").innerHTML = "";
-//         return;
-//     } else {
-//         if (window.XMLHttpRequest) {
-//             // code for IE7+, Firefox, Chrome, Opera, Safari
-//             xmlhttp = new XMLHttpRequest();
-//         } else {
-//             // code for IE6, IE5
-//             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-//         }
-//         xmlhttp.onreadystatechange = function() {
-//             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-//                 document.getElementById("accomodation").innerHTML = xmlhttp.responseText;
-//             }
-//         };
-//         xmlhttp.open("POST","package.php?place="+str,true);
-//         xmlhttp.send();
-//     }
-// }

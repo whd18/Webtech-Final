@@ -11,7 +11,7 @@ if(isset($_SESSION['name']))
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Example of Bootstrap 3 Horizontal Form Layout</title>
+<title>Sign IN</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -35,9 +35,13 @@ if(isset($_SESSION['name']))
     <form class="form-horizontal" method="post">
         <div class="form-group">
             <center><h1>LOGIN</h1></center>
+            <label id="result"></label><br /> <br />
+
+
             <label for="inputEmail" class="control-label col-xs-2" style="margin-right:50px; "> USERNAME: </label>
             <div class="col-xs-10">
-                <input type="text" class="form-control" id="uname" placeholder="UserName" >
+                <input type="text" class="form-control" id="uname" placeholder="UserName" onblur="usname() ;">
+                <label id="response"></label>
             </div>
         </div>
         <div class="form-group">
@@ -46,18 +50,16 @@ if(isset($_SESSION['name']))
                 <input type="password" class="form-control" id="pass" placeholder="Password">
             </div>
         </div>
-        <div class="form-group" id="result">
+        <div class="form-group">
             
         </div>
         <div class="form-group">
             <div class="col-xs-offset-2 col-xs-10">
-                <button type="button" class="btn btn-primary" id="submit">Login</button>
+                <button type="button" class="btn btn-primary" id="submit" onclick="signin();">LOGIN</button>
             </div>
         </div>
     </form>
-    <div id="finish">
-    	hello
-    </div>
+   
 </div>
 </center>
 </body>

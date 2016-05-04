@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title></title>
+<title>Sign UP</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -25,30 +25,42 @@
         <div id="load"></div>
         <div id="box"></div>  
         <div class="bs-example" style="width: 300px;">
+
             <form class="form-horizontal" method="post" id="form2">
         
         <div class="form-group" >
+
              <h2>SIGN UP</h2><br /> <br />
-            <label for="inputPassword" class="control-label col-xs-2" style="margin-right: 30px;">NAME:</label>
+
+             <p id="finish"></p>
+
+            <label for="inputName" class="control-label col-xs-2" style="margin-right: 30px;">NAME:</label>
             <div class="col-xs-10" id="line">
-                <input type="text" class="form-control" id="fname" placeholder="Full Name">
+
+                <input type="text" class="form-control" id="fname" placeholder="Full Name" onblur="first();">
             </div>
         </div>
+
         <div class="form-group">
            
-            <label for="inputEmail" class="control-label col-xs-2" style="margin-right: 30px;">USERNAME:</label>
+            <label for="inputName" class="control-label col-xs-2" style="margin-right: 30px;">USERNAME:</label>
             <div class="col-xs-10" id="line1">
-                <input type="text" class="form-control" id="username" placeholder="UserName">
+                <input type="text" class="form-control" id="username" placeholder="UserName" onblur="usname();">
+                <label id="response">
+                
+                </label>
             </div>
         </div>
+
         <div class="form-group" >
             <label for="inputPassword" class="control-label col-xs-2" style="margin-right: 30px;">PASSWORD:</label>
             <div class="col-xs-10" id="line2">
                 <input type="password" class="form-control" id="password" placeholder="Password">
             </div>
         </div>
+
          <div class="form-group" >
-            <label for="inputPassword" class="control-label col-xs-2" style="margin-right: 30px;">EMAIL</label>
+            <label for="inputEmail" class="control-label col-xs-2" style="margin-right: 30px;">EMAIL</label>
             <div class="col-xs-10" id="line3">
                 <input type="email" class="form-control" id="email" placeholder="email">
             </div>
@@ -58,13 +70,10 @@
         </div>
         <div class="form-group">
             <div class="col-xs-offset-2 col-xs-10">
-                <button type="button" class="btn btn-primary" id="submit">SUBMIT</button>
+                <button type="button" class="btn btn-primary" id="submit" onclick="signUp()">SUBMIT</button>
             </div>
         </div>
     </form>
-    <div id="finish">
-        
-    </div>
 </div>
     </center>
 </body>

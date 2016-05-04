@@ -1,28 +1,44 @@
 
-$(document).ready(function(){
 
-	$('#uname').focus();
+function usname()
+{
+    var uname=$('#uname').val();
 
-	$('#submit').click(function(){
+    var urltopass='username='+uname;
 
+    $.ajax({
+
+                type:'post',
+                data:urltopass,
+                url:'uname-check.php',
+                success: function(responseText)
+                {
+                    if(responseText=='0')
+                    {
+                        $('#response').html('<img src="error.png" height="20px" width="20px"><span>  Username Invalid </span>');
+                         $('#submit').attr("disabled", true);  
+                    }
+                    else if(responseText=='1')
+                    {
+                         $('#response').html('');
+                         $('#submit').attr("disabled", false);  
+                    }
+                }
+        });
+}
+	
+
+
+	function signin()
+	{
 		var username=$('#uname').val();
 		var password=$('#pass').val();
 
-		var result=$('#result').val();
+		// alert (username);
+		// alert(password);
 		
-		if(username !='' && password=='')
-		{		//$('finish').empty();
-				$("finish").update("New text");
-		       // $('<img src="error.png" height="20px" width="20px"> <p>PASSWORD WRONG</p>').appendTo('#finish');
-        }
-
-		else if(username =='' && password !='')
-		{	$('#finish').empty();
-			$('<img src="error.png" height="20px" width="20px"><p>USERNAME WRONG</p>').appendTo('#finish');
-		}
-
-
-		else if(username != '' && password != '')
+		
+		if(username != "" && password != "")
 		{
 			var urltopass='username='+username+'&password='+password;
 
@@ -46,7 +62,6 @@ $(document).ready(function(){
 					});	
 		}
 		else
-		$('<p>please provide info</p>').appendTo('#result');
+		 $('#result').html('<img src="error.png" height="20px" width="20px"><span>  please fill all the BOX </span>');
 
-	});
-});
+}

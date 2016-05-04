@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 03, 2016 at 07:08 PM
+-- Generation Time: May 04, 2016 at 09:12 PM
 -- Server version: 5.5.39
 -- PHP Version: 5.4.31
 
@@ -88,23 +88,50 @@ INSERT INTO `destination` (`id`, `destination`, `guide`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `favourite`
+--
+
+CREATE TABLE IF NOT EXISTS `favourite` (
+`id` int(10) NOT NULL,
+  `uname` varchar(50) NOT NULL,
+  `accomodation` int(10) NOT NULL,
+  `guide` int(10) NOT NULL,
+  `living` int(10) NOT NULL,
+  `nom` int(10) NOT NULL,
+  `price` int(10) NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `favourite`
+--
+
+INSERT INTO `favourite` (`id`, `uname`, `accomodation`, `guide`, `living`, `nom`, `price`) VALUES
+(1, 'rakib', 123, 600, 500, 100, 200),
+(2, 'rakib', 1200, 800, 1, 3, 6000),
+(3, 'rakib', 4700, 800, 2, 3, 33000),
+(4, 'rakib', 3200, 800, 2, 2, 16000);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `package`
 --
 
 CREATE TABLE IF NOT EXISTS `package` (
 `id` int(10) NOT NULL,
-  `package` varchar(50) NOT NULL
+  `package` varchar(50) NOT NULL,
+  `days` int(10) NOT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `package`
 --
 
-INSERT INTO `package` (`id`, `package`) VALUES
-(1, '3 days 2 nights'),
-(2, '3 nights 2 days'),
-(3, '4 nights 4 days'),
-(4, '1 week');
+INSERT INTO `package` (`id`, `package`, `days`) VALUES
+(1, '3 days 2 nights', 3),
+(2, '3 nights 2 days', 2),
+(3, '4 nights 4 days', 4),
+(4, '1 week', 7);
 
 -- --------------------------------------------------------
 
@@ -117,7 +144,6 @@ CREATE TABLE IF NOT EXISTS `picture` (
   `name` varchar(100) NOT NULL,
   `fpath` varchar(100) NOT NULL,
   `type` varchar(100) NOT NULL,
-  `place` varchar(100) NOT NULL,
   `user` varchar(100) NOT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
@@ -125,9 +151,9 @@ CREATE TABLE IF NOT EXISTS `picture` (
 -- Dumping data for table `picture`
 --
 
-INSERT INTO `picture` (`id`, `name`, `fpath`, `type`, `place`, `user`) VALUES
-(13, '10294371_1023497534363860_7483577546571930599_n.jpg', 'uploads/10294371_1023497534363860_7483577546571930599_n.jpg', 'image/jpeg', 'bandarban', 'rakib'),
-(14, '13087762_1141167192572214_9012831564467864115_n.jpg', 'uploads/13087762_1141167192572214_9012831564467864115_n.jpg', 'image/jpeg', 'bandarban', 'rakib');
+INSERT INTO `picture` (`id`, `name`, `fpath`, `type`, `user`) VALUES
+(13, '10294371_1023497534363860_7483577546571930599_n.jpg', 'uploads/10294371_1023497534363860_7483577546571930599_n.jpg', 'image/jpeg', 'rakib'),
+(14, '13087762_1141167192572214_9012831564467864115_n.jpg', 'uploads/13087762_1141167192572214_9012831564467864115_n.jpg', 'image/jpeg', 'rakib');
 
 -- --------------------------------------------------------
 
@@ -139,18 +165,21 @@ CREATE TABLE IF NOT EXISTS `user` (
   `name` varchar(50) DEFAULT NULL,
   `email` varchar(50) DEFAULT NULL,
   `uname` varchar(50) NOT NULL,
-  `password` varchar(50) DEFAULT NULL
+  `password` varchar(50) DEFAULT NULL,
+  `pic` varchar(100) DEFAULT NULL,
+  `opinion` varchar(1000) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`name`, `email`, `uname`, `password`) VALUES
-('asd', 'asd', 'asd', 'asd'),
-('ra', 'ads', 'eas', '123'),
-('rakib', 'rakib@mail.com', 'rakib', '123'),
-('wahid', 'wahid@mail.com', 'wahid', '123');
+INSERT INTO `user` (`name`, `email`, `uname`, `password`, `pic`, `opinion`) VALUES
+('asd', 'asd', 'asd', 'asd', '', NULL),
+('ra', 'ads', 'eas', '123', '', NULL),
+('rakib', 'rakib@mail.com', 'rakib', '123', 'uploads/13087762_1141167192572214_9012831564467864115_n.jpg', NULL),
+('rocky', 'rocky@mail.com', 'rocky', '123', '', NULL),
+('wahid', 'wahid@mail.com', 'wahid', 'asdf', 'uploads/13076539_1053861247994155_4917265797488623892_n.jpg', NULL);
 
 --
 -- Indexes for dumped tables
@@ -166,6 +195,12 @@ ALTER TABLE `accomodation`
 -- Indexes for table `destination`
 --
 ALTER TABLE `destination`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `favourite`
+--
+ALTER TABLE `favourite`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -200,6 +235,11 @@ MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=24;
 --
 ALTER TABLE `destination`
 MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `favourite`
+--
+ALTER TABLE `favourite`
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `package`
 --
