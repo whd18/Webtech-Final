@@ -1,5 +1,9 @@
 	<?php
-	// session_start();
+	session_start();
+    if(!isset($_SESSION['name']))
+    {
+        header("location:signIn.php");
+    }
 
 	?>
 
@@ -18,19 +22,19 @@
 </head>
 <body>
 <?php
-	// $_SESSION['name'];
-	// $name=$_SESSION['name'];
-	// echo "WELCOME '$name'";
+	
+	$name=strtoupper($_SESSION['name']);
+	
 
 ?>
-	<center><h1>WELCOME RAKIB</h1> </center>	
+	<center><h1><?php echo "WELCOME $name"; ?></h1> </center>	
 	<div class="container" style="width: 100px;">
 
 		       
   <table class="table table-hover">
     <thead>
       <tr>
-        <th><h2>DASHBOARD</h2></th>
+        <th style="color: white; background-color: black;"><h2 >DASHBOARD</h2></th>
       
       </tr>
     </thead>
@@ -44,14 +48,32 @@
      
       </tr>
       <tr>
-          <td><a href="signIn.php">PROFILE CHNAGE</a></td>
+          <td><a href="change.php"> CHANGE PROFILE INFO</a></td>
       </tr>
       <tr>
-          <td><a href="signIn.php">LOG OUT</a></td>
+          <td><a href="password.php"> CHANGE PASSWORD </a></td>
+      </tr>
+      <tr>
+          <td><a href="signOut.php">LOG OUT</a></td>
       </tr>
     </tbody>
   </table>
+<div class="container">
+     <?php
+     require_once('db.php');
+     $query="SELECT pic FROM user where uname='$name'";
+     $result=mysql_query($query);
+
+     while($row=mysql_fetch_array($result)){
+      
+      $val=  $row['pic'];
+    }
+
+     ?>
+  <img src="<?php echo $val ;?>" class="img-circle" alt="no profile picture" width="200" height="150" align="right"> 
+  </div>
 </div>
+
 
 </body>
 </html>
