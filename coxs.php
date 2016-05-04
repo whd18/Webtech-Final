@@ -1,7 +1,18 @@
+	<?php
+	session_start();
+    if(!isset($_SESSION['name']))
+    {
+        require_once('nav.php');
+    }
+    elseif (isset($_SESSION['name'])) {
+    	
+    	require_once('nav2.php');
+    }
+
+	?>
+	
 <!DOCTYPE html>
-<?php
-	require_once('nav.php');
-?>
+
 <html>
 <head>
 	<title> Cox's Bazar</title>

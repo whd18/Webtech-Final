@@ -2,6 +2,9 @@
 	
 	float: left;
 }
-a{
+td a{	
+	
 	text-decoration: none;
+	font-weight: bold;
 }
+

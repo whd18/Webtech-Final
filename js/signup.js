@@ -1,39 +1,46 @@
-$(document).ready(function(){
-    // $('<img src="error.png" height="20px" width="20px">').appendTo('#line');
-    $('#submit').click(function(){
 
-        var username=$('#username').val();
-        var password=$('#password').val();
-        var fname=$('#fname').val();
-        var email=$('#email').val();
-       
+function usname()
+{
+    var uname=$('#username').val();
 
-        if(fname =="" )
-            {
-                 $('#finish').empty();
-                $('<img src="error.png" height="20px" width="20px"><h3>FULL NAME MISSING</h3>').appendTo('#finish');
-            }
+    var urltopass='username='+uname;
+    $.ajax({
 
-        else  if(username =="" )
-            {
-                 $('#finish').empty();
-                $('<img src="error.png" height="20px" width="20px"><h3>USERNAME MISSING</h3>').appendTo('#finish');
-            }
+                type:'post',
+                data:urltopass,
+                url:'uname-check.php',
+                success: function(responseText)
+                {
+                    if(responseText=='1')
+                    {
+                        $('#response').html('<img src="error.png" height="20px" width="20px"><span>  username Already exist </span>');
+                         $('#submit').attr("disabled", true);  
+                    }
+                    else if(responseText=='0')
+                    {
+                         $('#response').html('');
+                         $('#submit').attr("disabled", false);  
+                    }
+                }
+        });
+}
 
-        else  if(password =="" )
-            {
-                 $('#finish').empty();
-                $('<img src="error.png" height="20px" width="20px"><h3>PASSWORD MISSING</h3>').appendTo('#finish');
-            }
-        
-        else if (email=="")
-            {
-                 $('#finish').empty();
-                $('<img src="error.png" height="20px" width="20px"><h3>EMAIL MISSING</h3>').appendTo('#finish');
-            }
 
-     
-        else if(username !='' && password !='' && email !='' )
+
+function signUp()
+{
+    var username=$('#username').val();
+    var fname=$('#fname').val();
+    var password=$("#password").val();
+    var email=$("#email").val();
+
+    // alert(username);
+    // alert(password);
+    // alert(fname);
+    // alert(email);
+
+
+      if(username !=null && password !="" && email !="" && fname!="")
         {
         var urltopass='username='+username+'&password='+password+'&email='+email+'&fname='+fname;
         $.ajax({
@@ -58,9 +65,6 @@ $(document).ready(function(){
         });
     }  
         else
-            $('#finish').empty();
-             $('<img src="error.png" height="20px" width="20px">Please Complete your form').appendTo('#finish');
-
-        return false;
-    });
-});
+          
+             $('#finish').html('<img src="error.png" height="20px" width="20px"><span>  please fill all the BOX </span>');
+}

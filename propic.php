@@ -16,20 +16,21 @@
 	$temp=$_FILES['myfile']['tmp_name'];
 	$error=$_FILES['myfile']['error'];
 	
-			
-			for($i = 0; $i < count($temp); $i++){
+		
 
-				move_uploaded_file($temp[$i], "uploads/".$name[$i]);
+				move_uploaded_file($temp, "uploads/".$name);
 
-				$filePath[$i]="uploads/".$name[$i];
+				$filePath="uploads/".$name;
 
 				
 			
-				
+			
 				$user=$_SESSION['name'];	
 
 
-				$query="INSERT INTO picture (name,fpath,type,user) VALUES ('$name[$i]','$filePath[$i]','$type[$i]','$user')";
+				$query="UPDATE user
+						SET pic='$filePath'
+						WHERE uname='$user' ";
 
 				$rs=mysql_query($query);
 
@@ -40,9 +41,6 @@
 				}
 				else
 					echo "upload not complete ". mysql_error();
-
-				
-			}
 
 
 
