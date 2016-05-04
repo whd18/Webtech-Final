@@ -12,8 +12,9 @@
 	{
 ?>
 	<p>	
-		<img src="<?php echo $row['fpath'] ; ?>" height="200" width="200" >
+		<img src="<?php echo $row['fpath'] ; ?>" height="300" width="300" align="left">
 	</p>
 	<?php
 	}
 	?>
+<a href="dashboard.php">Back to Dashboard</a>

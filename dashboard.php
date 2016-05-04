@@ -5,6 +5,8 @@
         header("location:signIn.php");
     }
 
+    require_once('nav2.php');
+
 	?>
 
 <!DOCTYPE html>
@@ -27,52 +29,60 @@
 	
 
 ?>
-	<center><h1><?php echo "WELCOME $name"; ?></h1> </center>	
-	<div class="container" style="width: 100px;">
+	<center><h1 style="margin-top: 60px;"><?php echo "WELCOME $name"; ?></h1> </center>	
+	<div class="container" style="margin-top: 60px;">
+    <div class="row">
+        <div class="col-lg-3">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th style="color: white; background-color: black;"><h2 >DASHBOARD</h2></th>
+              
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="image.php">SEE YOUR VISITED PLACE</a></td>
+               
+              </tr>
+              <tr>
+                <td><a href="first-pic.php">UPLOAD PICTURE </a></td>
+             
+              </tr>
+              <tr>
+                  <td><a href="change.php"> CHANGE PROFILE PICTURE</a></td>
+              </tr>
+              <tr>
+                  <td><a href="password.php"> CHANGE PASSWORD </a></td>
+              </tr>
+              <tr>
+                  <td><a href="signOut.php">LOG OUT</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-		       
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th style="color: white; background-color: black;"><h2 >DASHBOARD</h2></th>
-      
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a href="image.php">SEE YOUR VISITED PLACE</a></td>
-       
-      </tr>
-      <tr>
-        <td><a href="first-pic.php">UPLOAD PICTURE </a></td>
-     
-      </tr>
-      <tr>
-          <td><a href="change.php"> CHANGE PROFILE INFO</a></td>
-      </tr>
-      <tr>
-          <td><a href="password.php"> CHANGE PASSWORD </a></td>
-      </tr>
-      <tr>
-          <td><a href="signOut.php">LOG OUT</a></td>
-      </tr>
-    </tbody>
-  </table>
-<div class="container">
-     <?php
-     require_once('db.php');
-     $query="SELECT pic FROM user where uname='$name'";
-     $result=mysql_query($query);
 
-     while($row=mysql_fetch_array($result)){
-      
-      $val=  $row['pic'];
-    }
 
-     ?>
-  <img src="<?php echo $val ;?>" class="img-circle" alt="no profile picture" width="200" height="150" align="right"> 
+        <div class="col-lg-9">
+          <div class="profile-image">
+             <?php
+             require_once('db.php');
+             $query="SELECT pic FROM user where uname='$name'";
+             $result=mysql_query($query);
+
+             while($row=mysql_fetch_array($result)){
+              
+              $val=  $row['pic'];
+            }
+
+             ?>
+          <img src="<?php echo $val ;?>" class="img-circle" alt="no profile picture" width="200" height="150" align="right"> 
+          </div>
+        </div>
+    </div>
   </div>
-</div>
+		      
 
 
 </body>

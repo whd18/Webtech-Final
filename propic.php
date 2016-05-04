@@ -38,6 +38,7 @@
 				if($rs)
 				{
 					echo "<br />upload complete";	
+					header("location:dashboard.php");
 				}
 				else
 					echo "upload not complete ". mysql_error();
