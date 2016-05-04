@@ -1,8 +1,27 @@
-<!DOCTYPE html>
 <?php
-	require_once('nav.php');
+
+//this part is for LOGIN MUST !!!!
+	session_start();
+    if(!isset($_SESSION['name']))
+    {
+        header("location:signIn.php");
+    }
+// this part for nav and session
+     if(!isset($_SESSION['name']))
+    {
+        require_once('nav.php');
+    }
+    elseif (isset($_SESSION['name'])) {
+    	
+    	require_once('nav2.php');
+    }
+//end here
+	
 	require_once('db.php');
 ?>
+
+<!DOCTYPE html>
+
 <html>
 <head>
 	<title>User Opinion</title>
@@ -35,9 +54,9 @@
 					{
 						$usercomment=$_REQUEST['cmnt'];
 						
+						$uname=$_SESSION['name'];
 						
-						
-						$query="update user set opinion='$usercomment'  where uname='wahid'";
+						$query="update user set opinion='$usercomment'  where uname='$uname'";
 
 						$result=mysql_query($query);
 						
