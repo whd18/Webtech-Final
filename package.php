@@ -4,7 +4,7 @@
     {
         header("location:signIn.php");
     }
-
+    require_once('nav2.php');
 ?>
 
 <?php

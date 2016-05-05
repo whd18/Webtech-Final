@@ -26,7 +26,7 @@
 		        <li><a href="route.php"><span>Route </span></a></li>
 		        <li><a href="package.php"><span>Package</span></a></li>             
 		        <li><a href="signIn.php"><span>Sign In </span></a></li>
-		        <li><a href="#"><span>Contact Us</span></a></li>
+		        <li><a href="contact.php"><span>Contact Us</span></a></li>
 		    </ul>
 		</nav>
 

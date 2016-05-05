@@ -27,7 +27,7 @@
 		        <li><a href="package.php"><span>Package</span></a></li>             
 		        <li><a href="dashboard.php"><span>Profile</span></a></li>             
 		        <li><a href="signOut.php"><span>Sign Out </span></a></li>
-		        <li><a href="#"><span>Contact Us</span></a></li>
+		        <li><a href="contact.php"><span>Contact Us</span></a></li>
 		    </ul>
 		</nav>
 
