@@ -16,6 +16,7 @@ function dest(val)
             dataType:"Text" ,         
           success: function(data){
           	$('#response3').remove();
+            $('#destination').remove();
             $('#response').html(data);
             //$('#destination').attr('disabled', true);
             

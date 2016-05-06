@@ -1,5 +1,5 @@
-	<?php
-	session_start();
+  <?php
+  session_start();
     if(!isset($_SESSION['name']))
     {
         header("location:signIn.php");
@@ -7,7 +7,7 @@
 
     require_once('nav2.php');
 
-	?>
+  ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,13 +24,13 @@
 </head>
 <body>
 <?php
-	
-	$name=strtoupper($_SESSION['name']);
-	
+  
+  $name=strtoupper($_SESSION['name']);
+  
 
 ?>
-	<center><h1 style="margin-top: 60px;"><?php echo "WELCOME $name"; ?></h1> </center>	
-	<div class="container" style="margin-top: 60px;">
+  <center><h1 style="margin-top: 60px;"><?php echo "WELCOME $name"; ?></h1> </center> 
+  <div class="container" style="margin-top: 60px;">
     <div class="row">
         <div class="col-lg-3">
           <table class="table table-hover">
@@ -45,15 +45,18 @@
                 <td><a href="image.php">SEE YOUR VISITED PLACE</a></td>
                
               </tr>
+               <tr>
+                  <td><a href="watchlist.php"> WATCHLIST </a></td>
+              </tr>
+              <tr>
+                  <td><a href="fav-pac.php"> FAVOURITE PACKAGE</a></td>
+              </tr>
               <tr>
                 <td><a href="first-pic.php">UPLOAD PICTURE </a></td>
              
               </tr>
               <tr>
-                  <td><a href="watchlist.php"> WATCHLIST </a></td>
-              </tr>
-              <tr>
-                  <td><a href="fav-pac.php"> FAVOURITE PACKAGE</a></td>
+                  <td><a href="change.php"> CHANGE PROFILE PICTURE</a></td>
               </tr>
               <tr>
                   <td><a href="password.php"> CHANGE PASSWORD </a></td>
@@ -85,7 +88,7 @@
         </div>
     </div>
   </div>
-		      
+          
 
 
 </body>

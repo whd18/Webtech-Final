@@ -1,9 +1,13 @@
 <?php
 	session_start();
+    
     if(!isset($_SESSION['name']))
     {
         header("location:signIn.php");
     }
+
+    require_once('nav2.php');
+
 
 ?>
 
@@ -207,7 +211,7 @@ $totalPrice=$priceDay*$member*($priceHotel+$priceGuide);
 
   <form method="post" action="insert.php">
 
-  	<input type="submit" value="ADD TO FAVOURITE"  class="btn btn-primary"></input>
+  	<input type="submit" value="ADD FAVOURITE PACKAGE"  class="btn btn-primary"></input>
   </form>
   </center>
 </div>

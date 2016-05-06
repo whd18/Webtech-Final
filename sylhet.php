@@ -67,13 +67,18 @@
 			</form>
   		<?php
 						if(isset($_REQUEST['submit1']))
-					{
-						$wlist='Lalakhal, Sylhet';
-						$uname=$_SESSION['name'];
+							{
 						
+								$wlist='Lalakhal, Sylhet';
+								$uname=$_SESSION['name'];
+							if(!isset($_SESSION['name']) && $uname==null)
+							    {
+							        header("location:signIn.php");
+							 }
+							else
+
 						
-						
-						$query=$query="insert into watchlist (id,username,watchlist) values(null ,'$uname','$wlist')";
+						$query="insert into watchlist (id,username,watchlist) values(null ,'$uname','$wlist')";
 
 						$result=mysql_query($query);
 						

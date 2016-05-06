@@ -55,10 +55,16 @@
 			
 			</form>
   		<?php
-						if(isset($_REQUEST['submit1']))
-					{
-						$wlist='Hiron Point, Sundarban';
-						$uname=$_SESSION['name'];
+					if(isset($_REQUEST['submit1']))
+											{
+										
+												$wlist='Hiron Point, Sundarban';
+												$uname=$_SESSION['name'];
+											if(!isset($_SESSION['name']) && $uname==null)
+											    {
+											        header("location:signIn.php");
+											 }
+											else
 						
 						
 						

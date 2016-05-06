@@ -53,12 +53,16 @@
 			</form>
 
   		<?php
-						if(isset($_REQUEST['submit1']))
-					{
-						$wlist='Laboni Beach , Coxs Bazar';
-						$uname=$_SESSION['name'];
-						
-						
+					if(isset($_REQUEST['submit1']))
+											{
+										
+												$wlist='Laboni Beach, Coxs Bazar';
+												$uname=$_SESSION['name'];
+											if(!isset($_SESSION['name']) && $uname==null)
+											    {
+											        header("location:signIn.php");
+											 }
+											else
 						
 						$query="insert into watchlist (id,username,watchlist) values(null ,'$uname','$wlist')";
 
